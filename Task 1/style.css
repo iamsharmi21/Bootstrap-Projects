@@ -340,6 +340,18 @@ nav .btn:focus{
     .modal-body .modalsearch input{
         font-size: 14px;
     }
+    .card-body .from h5{
+        font-size: 11px;
+    }
+    .card-body .to h5{
+        font-size: 11px;
+    }
+    .badgebuttons p{
+        font-size: 11px;
+    }
+    .badgebuttons button {
+        font-size: 11px;
+    }
 }
 
 

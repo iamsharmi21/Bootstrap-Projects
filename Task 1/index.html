@@ -60,7 +60,7 @@
                             </div>
                             <div class="oroswapoptions d-flex align-items-center justify-content-between">
                                 <div class="oroswapselect">
-                                    <button class="btn d-flex align-items-center justify-content-between" type="button">
+                                    <button class="btn d-flex align-items-center justify-content-between" data-bs-toggle="modal" data-bs-target="#swaptokensmodal" type="button">
                                         <span><img src="./images/shib.svg" alt=""  width="25px" height="25px"></span>
                                         <h4>SHIB</h4>
                                         <span>
@@ -92,7 +92,7 @@
                             </div>
                             <div class="oroswapoptions d-flex align-items-center justify-content-between">
                                 <div class="oroswapselect">
-                                    <button class="btn d-flex align-items-center justify-content-between" type="button">
+                                    <button class="btn d-flex align-items-center justify-content-between" data-bs-toggle="modal" data-bs-target="#swaptokensmodal" type="button">
                                         <span><img src="./images/usdt.png" alt=""  width="30px" height="30px"></span>
                                         <h4 >USDT</h4>
                                         <span>
@@ -115,12 +115,12 @@
                 </div>
                 
             </div>
-            <div class="modal" style="display: block;">
+            <div class="modal" id="swaptokensmodal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header d-flex align-items-center justify-content-between mt-3 mb-3">
                             <div class="backbtn">
-                                <button class="btn d-flex align-items-center justify-content-between gap-2" type="button">
+                                <button class="btn d-flex align-items-center justify-content-between gap-2" type="button" data-bs-dismiss="modal">
                                     <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left relative right-1"><path d="m15 18-6-6 6-6"></path></svg></span>
                                     <h2>Back</h2>
                                 </button>
@@ -170,331 +170,333 @@
                             <div class="modalselecttokens">
                                 <h5 class="mb-3 mt-3">Select Token</h5>
                                 <div class="modalselectitems">
-                                    <ul style="list-style: none;">
-                                        <li class="d-flex align-items-center gap-2 mb-4 mt-4">
-                                            <img src="./images/eth.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">ETH</h4>
-                                                <h5>Ether</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/aave.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">AAVE</h4>
-                                                <h5>Aave</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/axs.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">AXS</h4>
-                                                <h5>Axie Infinity Shard</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/dai.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">DAI</h4>
-                                                <h5>Dai Stablecoin</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/aave.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">AAVE</h4>
-                                                <h5>Aave</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/sdai.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">sDAI</h4>
-                                                <h5>Savings Dai</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/frax.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">FRAX</h4>
-                                                <h5>Frax</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/link.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">LINK</h4>
-                                                <h5>Chainlink</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/mkr.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">MKR</h4>
-                                                <h5>Maker</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/shib.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">SHIB</h4>
-                                                <h5>Shiba Inu</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/steth.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">stETH</h4>
-                                                <h5>Lido Staked Ether</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/wsteth.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">wstETH</h4>
-                                                <h5>Wrapped Lido Staked Ether</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/frxeth.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">frxETH</h4>
-                                                <h5>Frax Ether</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/sfrxeth.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">sfrxETH</h4>
-                                                <h5>Staked Frax Ether</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/reth.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">rETH</h4>
-                                                <h5>Rocket Pool Ether</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/cbeth.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">cbETH</h4>
-                                                <h5>Coinbase Wrapped Staked ETH</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/uni.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">UNI</h4>
-                                                <h5>Uniswap</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/usdc.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">USDC</h4>
-                                                <h5>USDC</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/usdt.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">USDT</h4>
-                                                <h5>Tether USD</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/wbtc.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">WBTC</h4>
-                                                <h5>Wrapped Bitcoin</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/weth.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">WETH</h4>
-                                                <h5>Wrapped Bitcoin</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/busd.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">BUSD</h4>
-                                                <h5>Binance USD</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/pepe.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">PEPE</h4>
-                                                <h5>Pepe</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/yieldeth.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">YieldETH</h4>
-                                                <h5>Real Yield ETH</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/tbtc.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">tBTC</h4>
-                                                <h5>tBTC v2</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/pstake.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">PSTAKE</h4>
-                                                <h5>pSTAKE Finance</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/page.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">PAGE</h4>
-                                                <h5>Page</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/glto.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">GLTO</h4>
-                                                <h5>Gelotto</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/beast.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">BEAST</h4>
-                                                <h5>Gelotto BEAST</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/pundi-x-token-logo.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">PUNDIX</h4>
-                                                <h5>Pundi X Token</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/sfrax.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">sFRAX</h4>
-                                                <h5>Staked Frax</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/fxs.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">FXS</h4>
-                                                <h5>Frax Share</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/paxg.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">PAXG</h4>
-                                                <h5>Paxos Gold</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/crv.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">CRV</h4>
-                                                <h5>Curve DAO</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/crvusd.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">crvUSD</h4>
-                                                <h5>crvUSD</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/pxeth.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">pxETH</h4>
-                                                <h5>Dinero Staked ETH</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/eeth.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">eETH</h4>
-                                                <h5>ether.fi Staked ETH</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/ena.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">ENA</h4>
-                                                <h5>Ethena</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/usde.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">USDe</h4>
-                                                <h5>Ethena USDe</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/ezeth.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">ezETH</h4>
-                                                <h5>Renzo Restaked ETH</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/ankr.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">ANKR</h4>
-                                                <h5>Ankr Network</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/ankr.svg" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">ANKR</h4>
-                                                <h5>Ankr Network</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/yum.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">YUM</h4>
-                                                <h5>Yum</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/avail.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">AVAIL</h4>
-                                                <h5>Avail</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/eure.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">EURe</h4>
-                                                <h5>Monerium EUR emoney</h5>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex align-items-center gap-2 mb-4">
-                                            <img src="./images/lbtc.png" width="40px" height="40px" alt="">
-                                            <div class="selectitemname">
-                                                <h4 class="mb-1">LBTC</h4>
-                                                <h5>Lombard Staked Bitcoin</h5>
-                                            </div>
-                                        </li>
-
-                                    </ul>
+                                    <div class="scrollable-list">
+                                        <ul style="list-style: none;">
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/eth.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">ETH</h4>
+                                                    <h5>Ether</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/aave.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">AAVE</h4>
+                                                    <h5>Aave</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/axs.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">AXS</h4>
+                                                    <h5>Axie Infinity Shard</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/dai.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">DAI</h4>
+                                                    <h5>Dai Stablecoin</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/aave.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">AAVE</h4>
+                                                    <h5>Aave</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/sdai.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">sDAI</h4>
+                                                    <h5>Savings Dai</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/frax.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">FRAX</h4>
+                                                    <h5>Frax</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/link.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">LINK</h4>
+                                                    <h5>Chainlink</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/mkr.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">MKR</h4>
+                                                    <h5>Maker</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/shib.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">SHIB</h4>
+                                                    <h5>Shiba Inu</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/steth.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">stETH</h4>
+                                                    <h5>Lido Staked Ether</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/wsteth.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">wstETH</h4>
+                                                    <h5>Wrapped Lido Staked Ether</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/frxeth.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">frxETH</h4>
+                                                    <h5>Frax Ether</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/sfrxeth.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">sfrxETH</h4>
+                                                    <h5>Staked Frax Ether</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/reth.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">rETH</h4>
+                                                    <h5>Rocket Pool Ether</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/cbeth.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">cbETH</h4>
+                                                    <h5>Coinbase Wrapped Staked ETH</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/uni.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">UNI</h4>
+                                                    <h5>Uniswap</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/usdc.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">USDC</h4>
+                                                    <h5>USDC</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/usdt.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">USDT</h4>
+                                                    <h5>Tether USD</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/wbtc.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">WBTC</h4>
+                                                    <h5>Wrapped Bitcoin</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/weth.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">WETH</h4>
+                                                    <h5>Wrapped Bitcoin</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/busd.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">BUSD</h4>
+                                                    <h5>Binance USD</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/pepe.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">PEPE</h4>
+                                                    <h5>Pepe</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/yieldeth.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">YieldETH</h4>
+                                                    <h5>Real Yield ETH</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/tbtc.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">tBTC</h4>
+                                                    <h5>tBTC v2</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/pstake.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">PSTAKE</h4>
+                                                    <h5>pSTAKE Finance</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/page.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">PAGE</h4>
+                                                    <h5>Page</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/glto.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">GLTO</h4>
+                                                    <h5>Gelotto</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/beast.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">BEAST</h4>
+                                                    <h5>Gelotto BEAST</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/pundi-x-token-logo.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">PUNDIX</h4>
+                                                    <h5>Pundi X Token</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/sfrax.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">sFRAX</h4>
+                                                    <h5>Staked Frax</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/fxs.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">FXS</h4>
+                                                    <h5>Frax Share</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/paxg.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">PAXG</h4>
+                                                    <h5>Paxos Gold</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/crv.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">CRV</h4>
+                                                    <h5>Curve DAO</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/crvusd.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">crvUSD</h4>
+                                                    <h5>crvUSD</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/pxeth.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">pxETH</h4>
+                                                    <h5>Dinero Staked ETH</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/eeth.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">eETH</h4>
+                                                    <h5>ether.fi Staked ETH</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/ena.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">ENA</h4>
+                                                    <h5>Ethena</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/usde.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">USDe</h4>
+                                                    <h5>Ethena USDe</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/ezeth.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">ezETH</h4>
+                                                    <h5>Renzo Restaked ETH</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/ankr.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">ANKR</h4>
+                                                    <h5>Ankr Network</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/ankr.svg" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">ANKR</h4>
+                                                    <h5>Ankr Network</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/yum.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">YUM</h4>
+                                                    <h5>Yum</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/avail.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">AVAIL</h4>
+                                                    <h5>Avail</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2">
+                                                <img src="./images/eure.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">EURe</h4>
+                                                    <h5>Monerium EUR emoney</h5>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center gap-2 ">
+                                                <img src="./images/lbtc.png" width="40px" height="40px" alt="">
+                                                <div class="selectitemname">
+                                                    <h4 class="mb-1">LBTC</h4>
+                                                    <h5>Lombard Staked Bitcoin</h5>
+                                                </div>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
                                 </div>
                                 
                             </div>

@@ -328,7 +328,18 @@ nav .btn:focus{
         max-width: 40vw;
         width: 45%;
     }
-
+}
+ 
+@media (max-width: 375px) {
+    .modal-header h2{
+        font-size: 16px;
+    }
+    .modal-header .btn h2{
+        font-size: 16px;
+    }
+    .modal-body .modalsearch input{
+        font-size: 14px;
+    }
 }
 
 

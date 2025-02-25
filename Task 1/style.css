@@ -186,6 +186,91 @@ nav .btn:focus{
     color: black;
     background:linear-gradient(90deg, #c9b184, #feffd7, #c9b184);
 }
+.backbtn .btn h2{
+    font-size: 20px;
+    margin: 0px;
+    color: #777777;
+    font-weight: 500;
+}
+.backbtn .btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.modal-header h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #D8DDD7;
+    margin: 0px;
+}
+.modal-header{
+    border: none;
+    outline: none;
+}
+.modalsearch{
+    background-color: #2C2D2E;
+    border-radius: 50px;
+}
+.modalsearch input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    color: rgb(191, 193, 199);
+    font-size: 16px;
+}
+.modalpopulartokens h5{
+    color: #BFC1C7;
+    font-size: 14px;
+    font-weight: 500;
+}
+.modalsampletoken button h4{
+    font-size: 14px;
+    color: #F9F9FA;
+    font-weight: 500;
+    margin: 0;
+}
+.modalsampletoken button{
+    border: 1px solid rgb(68, 68, 68);
+    background-color: rgba(0, 0, 0, 0);
+}
+.modalsampletoken button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.modalsampletoken button:hover{
+    background-color: #2C2D2E;
+}
+.modalsampletokens {
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal-dialog {
+    max-width: 60vw; 
+    width: 60%; 
+}
+.modalselecttokens h5{
+    color: #BFC1C7;
+    font-size: 14px;
+    font-weight: 500;
+}
+.selectitemname h4{
+    margin: 0;
+    font-size: 16px;
+    color: #F9F9FA;
+    font-weight: 600;
+}
+.selectitemname h5{
+    margin: 0;
+    font-size: 16px;
+    color: #BFC1C7;
+    font-weight: 500;
+}
+.modalselectitems ul{
+    padding: 0;
+}
+.modal-content{
+    padding:20px 40px 20px 40px;
+}
 @media (max-width: 576px) {
     header {
         margin-bottom: 25px; 
@@ -196,6 +281,24 @@ nav .btn:focus{
         margin-bottom: 25px; 
     }
 }
+.modal-content{
+    background-color: #1E1E1F;
+    color: white;
+}
+@media (max-width: 768px) {
+    .modal-dialog {
+        max-width: 95vw;
+        width: 95%;
+    }
+}
+@media (min-width: 1440px) {
+    .modal-dialog {
+        max-width: 40vw;
+        width: 45%;
+    }
+
+}
+
 
 
 

@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(25, 25, 26);
+    font-family: 'Poppins', 'Inter', 'System-ui', 'Avenir', 'Helvetica', 'Arial', sans-serif;
+} 
+
+#navBarMenu li a{
+    font-weight: 600;
+    color: rgb(156, 159, 165);
+    font-size: 16px;
+    margin-right: 50px;
+}
+#navBarMenu li a:hover{
+    color: white;
+}
+#navItem{
+    margin-left: 120px;
+}
+nav .btn{
+    flex-grow: 0;
+    color: #c9b184;
+    border: 1px solid #c9b184;
+    width: auto;
+    max-width: fit-content;
+    border-radius: 50px;
+    padding: 10px 30px;
+    background-color: rgb(25, 25, 26);
+    font-size: 14px;
+}
+.navbar-toggler:focus ,.navbar-toggler:active{
+    outline: none;
+    box-shadow: none;
+}
+nav .btn:hover{
+    background: linear-gradient(90deg, #c9b184, #feffd7, #c9b184);   /*linear-gradient(90deg, rgb(124, 94, 65), rgb(254, 255, 215) 75.62%, rgb(181, 158, 116));*/
+    color: black;
+}
+nav .btn:focus{
+    outline: none;
+    box-shadow: none;
+}

@@ -31,7 +31,7 @@ nav .btn{
     box-shadow: none;
 }
 nav .btn:hover{
-    background:linear-gradient(90deg, #c9b184, #feffd7, #c9b184);
+    background: linear-gradient(90deg, #c9b184, #feffd7, #c9b184);   /*linear-gradient(90deg, rgb(124, 94, 65), rgb(254, 255, 215) 75.62%, rgb(181, 158, 116));*/
     color: black;
 }
 nav .btn:focus{
@@ -271,16 +271,6 @@ nav .btn:focus{
 .modal-content{
     padding:20px 40px 20px 40px;
 }
-@media (max-width: 576px) {
-    header {
-        margin-bottom: 25px; 
-    }
-}
-@media (max-width: 768px) {
-    header {
-        margin-bottom: 25px; 
-    }
-}
 .modal-content{
     background-color: #1E1E1F;
     color: white;
@@ -358,7 +348,116 @@ input[type="number"]::-webkit-outer-spin-button {
     min-height: 100vh; 
     margin: 0 auto;
 }
+#connectWalletModal{
+    background-color: #2d3748;
+    padding: 20px 5px 20px 5px;
+    border-radius: 10px;
+} 
+#connectWalletheader{
+    color: #ffffffeb;
+    font-size: 16px;
+    font-weight: 600;
+}
+#connectWalletheader button{
+    border: none;
+    outline: none;
+    transform: scale(0.7);
+}
+#connectWalletheader button:focus{
+    outline: none;
+    box-shadow: none;
+}
+#connectWalletheader p{
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.top2wallet button{
+    padding: 0;
+    border: none;
+    margin-bottom: 8px;
+}
+.top2wallet button:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.top2wallet button .card{
+    padding: 15px 35px 15px 35px;
+    background-color: rgba(0, 0, 0, 0.36);
+    outline: none;
+}
+.top2wallet button .card:hover{
+    background-color: rgb(32, 32, 32);
+    border-color: #6a66ff;
+}
+.top2wallet button .card p{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(238, 242, 248);
+    margin-bottom: 0;
+}
+.walletlist ul{
+    padding: 0;
+    margin: 0;
+}
+.walletlist ul li p{
+    margin: 0;
+    color: rgb(238, 242, 248);
+    font-size: 14px;
+    font-weight: 400;
+}
+.walletlist ul li button{
+    width: 100%;
+    margin-top: 5px;
+    padding: 12px 8px 12px 8px;
+    background-color: rgba(0, 0, 0, 0.36);
+    border-radius: 10px;
+}
+.walletlist ul li button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.walletlist ul li button:hover{
+    background-color: rgb(32, 32, 32);
+    border-color: #6a66ff;
+}
+.walletlist ul li p span{
+    background-color: rgb(74, 85, 104);
+    color: rgb(238, 242, 248);
+    font-size: 8px;
+    font-weight: 600;
+    padding:4px 6px 4px 6px;
+    border-radius: 5px;
+}
+.walletlist{
+    max-height: 160px;
+    overflow-y: auto;
+    scrollbar-width: thick;
+}
+.walletlist::-webkit-scrollbar{
+    width: 0;
+}
+#connectWalletdialog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    margin: 0 auto;
+}
 
+@media (max-width: 576px) {
+    header {
+        margin-bottom: 25px; 
+    }
+}
+@media (max-width: 768px) {
+    header {
+        margin-bottom: 25px; 
+    }
+}
 @media (max-width: 768px) {
     .modal-dialog {
         max-width: 95vw;
@@ -371,7 +470,24 @@ input[type="number"]::-webkit-outer-spin-button {
         width: 45%;
     }
 }
- 
+@media (max-width: 768px) {
+    #connectWalletdialog {
+        max-width: 95vw;
+        width: 95%;
+    }
+}
+@media (min-width: 768px) {
+    #connectWalletdialog {
+        max-width: 40vw;
+        width: 40%;
+    }
+} 
+@media (min-width: 1440px) {
+    #connectWalletdialog {
+        max-width: 20vw;
+        width: 20%;
+    }
+} 
 @media (max-width: 375px) {
     .modal-header h2{
         font-size: 16px;

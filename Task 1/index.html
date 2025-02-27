@@ -23,7 +23,7 @@
                         <li class="nav-item my-2"><a href="" class="nav-link text-decoration-none">Portfolio</a></li>
                     </ul>
                 </div>
-                <button id="navItem" class="collapse navbar-collapse btn btn-sm">Connect Wallet</button>
+                <button id="navItem" class="collapse navbar-collapse btn btn-sm" data-bs-toggle="modal" data-bs-target="#connectWalletmodal">Connect Wallet</button>
             </div>
         </nav>
     </header>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                         <div class="mainconnectwallet mt-4">
-                            <button class="btn" type="button">Connect Wallet</button>
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#connectWalletmodal">Connect Wallet</button>
                         </div>
                     </div>
                 </div>
@@ -524,6 +524,108 @@
                                 <button class="btn" type="button"><span><input type="number" placeholder="0-50%"></span></button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="connectWalletmodal">
+                <div class="modal-dialog" id="connectWalletdialog">
+                    <div class="modal-content" id="connectWalletModal">
+                         <div class="modal-header d-flex  align-items-center" id="connectWalletheader">
+                            <p>Select your wallet</p>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                         </div>
+                         <div class="modal-body">
+                            <div class="top2wallet d-flex gap-1">
+                                <button class="btn flex-fill">
+                                    <div class="card d-flex align-items-center">
+                                        <img src="./images/keplr.png" width="56px" height="56px">
+                                        <p>Keplr</p>
+                                    </div>
+                                </button>
+                                <button class="btn flex-fill">
+                                    <div class="card d-flex align-items-center">
+                                        <img src="./images/leap.svg" width="56px" height="56px">
+                                        <p>Leap</p>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="walletlist">
+                                <ul>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/leapcosmos.svg" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">Leap Cosmos MetaMask <span class="badge">SNAP</span></p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/okx.png" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">OKX Wallet</p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/trust.svg" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">Trust</p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/cosmostation.png" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">Cosmostation</p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/ctrl.svg" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">CTRL</p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/fin.jpg" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">Fin</p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/coin98.png" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">Coin98</p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/compass.png" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">Compass</p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/exodus.svg" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">Exodus</p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/tailwind.svg" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">TAILWIND</p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/owallet.png" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">OWallet</p>
+                                        </button>
+                                    </li>
+                                    <li style="list-style: none;">
+                                        <button type="button" class="btn d-flex align-items-center gap-2">
+                                            <img src="./images/crypto.png" alt="" width="25px" height="25px">
+                                            <p class="d-flex align-items-center gap-1">Crypto.com Wallet</p>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                         </div>
                     </div>
                 </div>
             </div>

@@ -17,7 +17,10 @@ body {
 }
 nav .btn{
     flex-grow: 0;
-    color: #c9b184;
+    background: linear-gradient(90deg, rgb(201, 177, 132), rgb(254, 255, 215), rgb(201, 177, 132));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     border: 1px solid #c9b184;
     width: auto;
     max-width: fit-content;
@@ -37,4 +40,539 @@ nav .btn:hover{
 nav .btn:focus{
     outline: none;
     box-shadow: none;
+}
+.liquiditypools h5{
+    color: rgb(249, 249, 250);
+    font-size: 44px;
+    font-weight: 600;
+}
+.tvl{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(191, 193, 199);
+    background-color: rgb(30, 30, 31);
+    padding: 12px;
+    background-image: url(./images/abstractDots2.png);
+    background-size: 200px 100px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.volume {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(191, 193, 199);
+    background-color: rgb(30, 30, 31);
+    padding: 12px;
+    background-image: url(./images/abstractDots2.png);
+    background-size: 200px 100px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.nav-tabs{
+    border-bottom: none !important;
+}
+.nav-tabs li button{
+    
+    background: transparent;
+    color: rgb(191, 193, 199);
+    font-size: 14px;
+    font-weight: 500; 
+    border: none;
+}
+.nav-tabs li button:active{
+    background-color: rgb(44, 45, 46);
+}
+.nav-tabs .nav-item .nav-link{
+    text-decoration: none;
+    color: rgb(191, 193, 199);
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+.nav-tabs .nav-item .nav-link:hover{
+    background-color: rgb(44, 45, 46);
+}
+.nav-tabs .nav-link.active {
+    background-color: rgb(44, 45, 46) !important;
+}
+/*.form-check{
+    padding: 10px 60px 10px 20px;
+    background-color: rgb(44, 45, 46);
+    position: relative;
+    border-radius: 50px;
+}
+.form-switch .form-check-input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.form-switch .form-check-input {
+    position: absolute;
+    left: 150px;
+    background-color: rgb(25, 25, 26) !important; 
+    border: none;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: #c9b184 !important;
+}
+
+.form-check-label{
+    color: rgb(191, 193, 199);
+    font-size: 14px;
+    font-weight: 500;
+} */
+ .showbtn{
+    background-color:rgb(44, 45, 46) ;
+    padding: 10px 20px;
+    border-radius: 50px;
+ }
+ .showbtn p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: rgb(191, 193, 199);
+ }
+ .switchbtn{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(25, 25, 26);
+    border-radius: 50px;
+    position: relative;
+    top: 4px;
+ }
+ .showbtn input{
+    display: none;
+ }
+ .switchbtn::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: rgb(191, 193, 199);
+    border-radius: 60%;
+    margin: 2px;
+    transition: 0.5s;
+ }
+ input:checked +  .switchbtn::before{
+    background-color: #c9b184;
+    transform: translateX(20px);
+ }
+.poolsearchbar{
+    padding: 10px 20px;
+    background-color: rgb(44, 45, 46);
+    border-radius: 50px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.poolsearchbar input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    columns: rgb(44, 45, 46);
+    font-size: 14px;
+    font-weight: 500;
+    caret-color: rgb(213, 213, 213);
+    padding: 0;
+    position: relative;
+    top: 2px;
+    width: 100%;
+    color: white;
+}
+.createbtn .btn{
+    border-radius: 50px;
+    font-size: 14px;
+    background: linear-gradient(90deg, rgb(201, 177, 132), rgb(254, 255, 215), rgb(201, 177, 132));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border: 1px solid #c9b184;
+    width: auto;
+    max-width: fit-content;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+.createbtn .btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.createbtn .btn:hover{
+    background: linear-gradient(90deg, #c9b184, #feffd7, #c9b184);   /*linear-gradient(90deg, rgb(124, 94, 65), rgb(254, 255, 215) 75.62%, rgb(181, 158, 116));*/
+    color: black;
+}
+#serachConnect{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+.table thead{
+    background-color: rgb(30, 30, 31); 
+}
+table thead tr th{
+    color: rgb(191, 193, 199);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+tbody{
+    background-color: transparent;
+}
+.images{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.img1{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+.img2{
+    left: -50%;
+    transform: translateX(+50%);
+}
+tbody h4{
+    color: rgb(249, 249, 250);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.poolid h5{
+    color: rgb(191, 193, 199);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.poolid p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+    background: linear-gradient(90deg, rgb(201, 177, 132), rgb(254, 255, 215), rgb(201, 177, 132));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.liquidity{
+    color: rgb(191, 193, 199);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.volume24h{
+    color: rgb(191, 193, 199);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.fees24h{
+    color: rgb(191, 193, 199);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.apr24h{
+    color: rgb(191, 193, 199);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.usdtshinimg{
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: 6px;
+}
+.usdtshinimg span{
+    color: rgb(191, 193, 199);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.btn:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+svg:hover{
+    stroke: #c9b184;
+}
+.depositbtn{
+    background: linear-gradient(90deg, rgb(201, 177, 132), rgb(254, 255, 215), rgb(201, 177, 132));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border: 1px solid #c9b184;
+    width: auto;
+    max-width: fit-content;
+    border-radius: 50px;
+    padding: 10px 30px;
+    background-color: rgb(25, 25, 26);
+    font-size: 14px;
+}
+.depositbtn:hover{
+    background: linear-gradient(90deg, #c9b184, #feffd7, #c9b184);   /*linear-gradient(90deg, rgb(124, 94, 65), rgb(254, 255, 215) 75.62%, rgb(181, 158, 116));*/
+    color: black;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 20px; 
+}
+@media (max-width: 768px){
+    .liquiditypools h5{
+        font-size: 14px;
+        margin-right: 12px;
+    }
+    .tvl h5{
+        font-size: 10px;
+    }
+    .volume h5{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1025px){
+    .nav-link{
+        font-size: 12px;
+    }
+    .nav-tabs .nav-item .nav-link{
+        padding: 7px 12px;
+    }
+    .nav-tabs{
+        display: flex;
+        
+    }
+    .poolsearchbar{
+        padding: 4px 8px;
+        min-width: 150px;
+    }
+    .poolsearchbar input{
+        font-size: 10px;
+    }
+    .showbtn{
+        width: 150px;
+        
+    }
+    .showbtn p{
+        font-size: 12px;
+    }
+    .switchbtn{
+        width: 40px;
+        height: 20px;
+        background-color: rgb(25, 25, 26);
+        border-radius: 50px;
+        position: relative;
+        top: 4px;
+     }
+     .showbtn input{
+        display: none;
+     }
+     .switchbtn::before {
+        position: absolute;
+        content: "";
+        width: 17px;
+        height: 17px;
+        background-color: rgb(191, 193, 199);
+        border-radius: 60%;
+        margin: 1px;
+        transition: 0.5s;
+     }
+     .showbtn {
+        padding: 5px 10px;
+     }
+    #serachConnect{
+        padding-left: 12px;
+        padding-right: 10px;
+        display: flex;
+        
+    }
+    .createbtn .btn{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+@media (max-width: 426px){
+    .nav-link{
+        font-size: 10px;
+    }
+    .nav-tabs .nav-item .nav-link{
+        padding: 7px 12px;
+    }
+    .nav-tabs{
+        display: flex;
+        justify-content: space-between;
+    }
+    .poolsearchbar{
+        padding: 4px 8px;
+        min-width: 90px;
+    }
+    .poolsearchbar input{
+        font-size: 10px;
+    }
+    .showbtn p{
+        font-size: 10px;
+    }
+    .switchbtn{
+        width: 40px;
+        height: 20px;
+        background-color: rgb(25, 25, 26);
+        border-radius: 50px;
+        position: relative;
+        top: 4px;
+     }
+     .showbtn input{
+        display: none;
+     }
+     .switchbtn::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: rgb(191, 193, 199);
+        border-radius: 60%;
+        margin: 2px;
+        transition: 0.5s;
+     }
+     .showbtn {
+        padding: 5px 10px;
+        width: 110px;
+     }
+    #serachConnect{
+        padding-left: 4px;
+        padding-right: 8px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .createbtn .btn{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+@media (max-width: 376px){
+    .nav-link{
+        font-size: 10px;
+    }
+    .nav-tabs .nav-item .nav-link{
+        padding: 7px 12px;
+    }
+    .nav-tabs{
+        display: flex;
+        justify-content: space-between;
+    }
+    .poolsearchbar{
+        padding: 4px 8px;
+        min-width: 90px;
+    }
+    .poolsearchbar input{
+        font-size: 10px;
+    }
+    .showbtn p{
+        font-size: 10px;
+    }
+    .switchbtn{
+        width: 40px;
+        height: 20px;
+        background-color: rgb(25, 25, 26);
+        border-radius: 50px;
+        position: relative;
+        top: 4px;
+     }
+     .showbtn input{
+        display: none;
+     }
+     .switchbtn::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: rgb(191, 193, 199);
+        border-radius: 60%;
+        margin: 2px;
+        transition: 0.5s;
+     }
+     .showbtn {
+        padding: 5px 10px;
+        width: 110px;
+     }
+    #serachConnect{
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .createbtn .btn{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+@media (max-width: 321px){
+    .nav-link{
+        font-size: 10px;
+    }
+    .nav-tabs .nav-item .nav-link{
+        padding: 7px 12px;
+    }
+    .nav-tabs{
+        display: flex;
+        justify-content: space-between;
+    }
+    .poolsearchbar{
+        padding: 4px 8px;
+        min-width: 90px;
+    }
+    .poolsearchbar input{
+        font-size: 6px;
+    }
+    .showbtn p{
+        font-size: 8px;
+    }
+    .switchbtn{
+        width: 40px;
+        height: 20px;
+        background-color: rgb(25, 25, 26);
+        border-radius: 50px;
+        position: relative;
+        top: 4px;
+     }
+     .showbtn input{
+        display: none;
+     }
+     .switchbtn::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: rgb(191, 193, 199);
+        border-radius: 60%;
+        margin: 2px;
+        transition: 0.5s;
+     }
+     .showbtn {
+        padding: 5px 10px 5px 10px;
+        width: 110px;
+        
+     }
+    #serachConnect{
+        padding-left: 12px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .createbtn .btn{
+        font-size: 8px;
+        padding: 5px 10px;
+    }
 }

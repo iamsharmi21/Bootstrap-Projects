@@ -18,7 +18,7 @@
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navItem" data-bs-target="#navItem"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navItem">
                     <ul class="navbar-nav" id="navBarMenu">
-                        <li class="nav-item my-2"><a href="" class="nav-link text-decoration-none ">Swap</a></li>
+                        <li class="nav-item my-2"><a href="./index.html" class="nav-link text-decoration-none ">Swap</a></li>
                         <li class="nav-item my-2"><a href="" class="nav-link text-decoration-none text-white">Liquidity</a></li>
                         <li class="nav-item my-2"><a href="" class="nav-link text-decoration-none">Portfolio</a></li>
                     </ul>
@@ -27,6 +27,1595 @@
             </div>
         </nav>
     </header>
+    <div class="container d-flex justify-content-between align-items-center mt-5 mb-3">
+        <div class="liquiditypools">
+            <h5>Liquidity Pools</h5>
+        </div>
+        <div class="tvlVolume d-flex gap-3  align-items-center">
+            <div class="tvl">
+                <h5>TVL</h5>
+                <h5>$2,674,346,637.26</h5>
+            </div>
+            <div class="volume">
+                <h5>24 Volume</h5>
+                <h5>$2,674,346,637.26</h5>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">                                   
+            <div class="col-12  col-md-5 mt-3">
+                <ul class="nav nav-tabs gap-3 d-flex">
+                    <li class="nav-item">                                                                              
+                        <button class="nav-link active" type="button">Concentrated</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" type="button">Standard</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" type="button">All</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12  col-md-7 d-flex gap-3 align-items-center mt-3" id="serachConnect">
+                <div class="showbtn d-flex align-items-center gap-2">
+                    <p>Show farms</p>
+                    <div>
+                        <input type="checkbox" id="checkround">
+                        <label for="checkround" class="switchbtn"></label>
+                    </div>
+                </div>                                                                                                
+                <div class="poolsearchbar d-flex align-items-center">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13.5px" height="13.5px" viewBox="0 0 24 24" fill="none" stroke="#BFC1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute top=0 left-[1.4rem]"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                    </span>
+                    <input type="text" placeholder="Search by pool name...">
+                </div>
+                <div class="createbtn">
+                    <button class="btn">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="table-responsive mt-4">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th>Pool Name</th>
+                        <th>Liquidity</th>
+                        <th>Volume 24H</th>
+                        <th>Fees 24H</th>
+                        <th>Apr 24H</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/usdt.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/usde.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>USDT/USDe</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #4589</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.79%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$4,198,120.91</td>
+                        <td class="volume24h">$149,925,681.11</td>
+                        <td class="fees24h">$446.19</td>
+                        <td class="apr24h">68.12%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+3</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/shib.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/yum.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>SHIB/YUM</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #5079</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.44%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,879,493.08</td>
+                        <td class="volume24h">$149,815,969.20</td>
+                        <td class="fees24h">$3,368.86</td>
+                        <td class="apr24h">16.73%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+2</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/sdai.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/steth.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>sDAI/stETH</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #4750</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.09%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$7,150,156.49</td>
+                        <td class="volume24h">$147,476,723.14</td>
+                        <td class="fees24h">$5,447.50</td>
+                        <td class="apr24h">78.88%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+3</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/cbeth.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/fxs.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>cbETH/FXS</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #7310</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.72%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,883,021.29</td>
+                        <td class="volume24h">$142,877,842.21</td>
+                        <td class="fees24h">$4,523.57</td>
+                        <td class="apr24h">58.41%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+3</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/axs.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/eth.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>AXS/ETH</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #4937</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.59%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$9,885,199.85</td>
+                        <td class="volume24h">$142,798,870.82</td>
+                        <td class="fees24h">$118.01</td>
+                        <td class="apr24h">56.72%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+3</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/dai.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/yum.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>DAI/YUM</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #6326</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.80%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$6,044,433.33</td>
+                        <td class="volume24h">$140,196,804.69</td>
+                        <td class="fees24h">$5,626.58</td>
+                        <td class="apr24h">50.93%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/busd.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/page.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>BUSD/PAGE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #9791</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.31%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$6,633,849.43</td>
+                        <td class="volume24h">$139,483,186.28</td>
+                        <td class="fees24h">$5,412.55</td>
+                        <td class="apr24h">53.95%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/weth.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/pundi-x-token-logo.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>WETH/PUNDIX</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #6127</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.27%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$9,505,482.53</td>
+                        <td class="volume24h">$134,269,092.55</td>
+                        <td class="fees24h">$1,791.00</td>
+                        <td class="apr24h">64.91%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/link.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>LINK/ANKR</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #6313</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.57%/p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,472,182.55</td>
+                        <td class="volume24h">$133,400,802.26</td>
+                        <td class="fees24h">$3,826.20</td>
+                        <td class="apr24h">33.12%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ezeth.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/axs.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ezETH/AXS</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #5471</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.51%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$4,022,603.83</td>
+                        <td class="volume24h">$128,591,353.20</td>
+                        <td class="fees24h">$733.98</td>
+                        <td class="apr24h">59.53%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/pstake.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/dai.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>PSTAKE/DAI</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #2321</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.71%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$6,854,455.97</td>
+                        <td class="volume24h">$124,916,472.29</td>
+                        <td class="fees24h">$4,171.05</td>
+                        <td class="apr24h">64.04%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/cbeth.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/yieldeth.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>cbETH/YieldETH</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #2033</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.47%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$6,477,229.66</td>
+                        <td class="volume24h">$121,972,650.51</td>
+                        <td class="fees24h">$2,302.16</td>
+                        <td class="apr24h">45.36%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/wbtc.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/ena.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>WBTC/ENA</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #2739</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.25%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$9,603,288.29</td>
+                        <td class="volume24h">$121,567,188.53</td>
+                        <td class="fees24h">$2,809.62</td>
+                        <td class="apr24h">31.81%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/reth.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/yieldeth.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>rETH/YieldETH</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #3417</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.13%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$8,014,300.17</td>
+                        <td class="volume24h">$119,440,302.83</td>
+                        <td class="fees24h">$6,687.93</td>
+                        <td class="apr24h">32.14%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/usdt.png" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/ena.png" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>USDT/ENA</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #2986</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.02%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$8,866,096.28</td>
+                        <td class="volume24h">$117,758,333.77</td>
+                        <td class="fees24h">$2,744.20</td>
+                        <td class="apr24h">29.75%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex gap-5 align-items-center">
+                            <div class="images">
+                                <img src="./images/ankr.svg" alt="" width="40px" height="40px" class="img1">
+                                <img src="./images/aave.svg" alt="" width="40px" height="40px" class="img2">
+                            </div>
+                            <div class="poolname">
+                                <h4>ANKR/AAVE</h4>
+                                <div class="poolid d-flex align-items-center gap-1">
+                                    <h5>Pool #8629</h5>
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1206_661)"><path d="M5.71902 10.8486H3.20115C2.87627 10.8486 2.63598 10.7064 2.48031 10.4219C2.32464 10.1374 2.34156 9.8629 2.53107 9.59827L8.60239 1.06422C8.73776 0.87898 8.91374 0.749976 9.13033 0.677205C9.34692 0.604434 9.57028 0.607742 9.80041 0.687129C10.0305 0.766515 10.1997 0.905442 10.3081 1.10391C10.4163 1.30238 10.457 1.51407 10.4299 1.739L9.78011 6.87928H12.9274C13.2794 6.87928 13.5265 7.03144 13.6686 7.33576C13.8107 7.64007 13.7667 7.92454 13.5366 8.18916L6.85613 16.0087C6.70722 16.1807 6.52447 16.2932 6.30788 16.3461C6.09129 16.3991 5.88147 16.3792 5.67841 16.2866C5.47536 16.194 5.3163 16.0517 5.20124 15.8599C5.08617 15.668 5.04218 15.4596 5.06925 15.2347L5.71902 10.8486Z" fill="url(#paint0_linear_1206_661)"></path></g><defs><linearGradient id="paint0_linear_1206_661" x1="2.375" y1="8.5" x2="13.75" y2="8.5" gradientUnits="userSpaceOnUse"><stop stop-color="#C9B184"></stop><stop offset="0.5" stop-color="#FEFFD7"></stop><stop offset="1" stop-color="#C9B184"></stop></linearGradient><clipPath id="clip0_1206_661"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                                    </span>
+                                    <p>0.34%</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="liquidity">$3,269,303.45</td>
+                        <td class="volume24h">$148,609,553.49</td>
+                        <td class="fees24h">$131.24</td>
+                        <td class="apr24h">98.32%</td>
+                        <td class="usdtshib">
+                            <div class="usdtshinimg d-flex gap-2">
+                                <img src="./images/usdt.png" alt="" width="32" height="32">
+                                <img src="./images/shib.svg" alt="" width="32" height="32">
+                                <span>+1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn" type="button">
+                                <svg class="group-hover:fill-beige" width="14" height="13" viewBox="0 0 14 13" fill="#BFC1C7" xmlns="http://www.w3.org/2000/svg"><path d="M13.3892 7.86362H0.152378C0.0686838 7.86362 0.000208084 7.92499 0.000208084 7.99999V9.02271C0.000208084 9.09771 0.0686838 9.15907 0.152378 9.15907H11.664L8.91927 12.2784C8.84127 12.367 8.91166 12.5 9.0391 12.5H10.4181C10.5113 12.5 10.5989 12.4625 10.6578 12.396L13.8686 8.74657C14.1825 8.38862 13.899 7.86362 13.3892 7.86362ZM13.8477 3.8409H2.33601L5.08078 0.721591C5.15877 0.632954 5.08839 0.5 4.96095 0.5H3.5819C3.4887 0.5 3.4012 0.5375 3.34223 0.603977L0.131454 4.2534C-0.182396 4.61136 0.101021 5.13636 0.608886 5.13636H13.8477C13.9314 5.13636 13.9998 5.07499 13.9998 4.99999V3.97726C13.9998 3.90227 13.9314 3.8409 13.8477 3.8409Z"></path></svg>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="depositbtn">Deposit</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

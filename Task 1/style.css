@@ -17,7 +17,10 @@ body {
 }
 nav .btn{
     flex-grow: 0;
-    color: #c9b184;
+    background: linear-gradient(90deg, rgb(201, 177, 132), rgb(254, 255, 215), rgb(201, 177, 132));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     border: 1px solid #c9b184;
     width: auto;
     max-width: fit-content;
@@ -172,7 +175,10 @@ nav .btn:focus{
     width: 100%;
     font-size: 16px;
     font-weight: 600;
-    color: #c9b184;
+    background: linear-gradient(90deg, rgb(201, 177, 132), rgb(254, 255, 215), rgb(201, 177, 132));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     border: 1px solid #c9b184;
     border-radius: 25px;
     padding-top: 10px;
